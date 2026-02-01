@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz app</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-    <header class="quiz-header">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="quiz-header">
         <h1>Quiz App</h1>
         <p class="progress" id="progress">3/10</p>
-    </header>
+      </header>
 
-    <section class="quiz-body">
+      <section class="quiz-body">
         <h2 class="question">What is the answer of this question</h2>
         <ul class="options" id="options">
-            <li class="option"  data-index="0">
+          <!-- <li class="option"  data-index="0">
                 <span>A.</span>
                 Option One
             </li>
@@ -31,15 +31,15 @@
             <li class="option" data-index="3" >
                 <span>D.</span>
                 Option Four
-            </li>
+            </li> -->
         </ul>
-    </section>
-    <div class="buttons">
-    <button class="next-btn" id="skip-btn">Skip</button>
-    <button class="next-btn" id="next-btn">Next</button>
+      </section>
+      <div class="buttons">
+        <button class="next-btn" id="skip-btn">Skip</button>
+        <button class="next-btn" id="next-btn">Next</button>
+      </div>
     </div>
-</div>
-<script src="questions/questions.js"></script>
-<script src="app.js"></script>
-</body>
+    <script src="questions/questions.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
