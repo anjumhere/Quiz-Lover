@@ -6,7 +6,7 @@
 
 A modern, beginner-friendly quiz application built with vanilla HTML, CSS, and JavaScript. Perfect for learning web development fundamentals!
 
-![Quiz App Screenshot](<img src="/images/Screenshot.png" alt="screenshot">)
+![Quiz App Screenshot](images/Screenshot.png)
 
 ---
 
@@ -100,20 +100,19 @@ This project is designed for **beginners** who want to learn web development. He
 
 ## 📁 Project Structure
 
+```
 quiz-app/
 │
-├── index.html # Main HTML file (structure of the app)
-├── style.css # Styles for the app
-├── app.js # Main JavaScript logic
+├── index.html              # Main HTML file (structure of the app)
+├── style.css               # Styles for the app
+├── app.js                  # Main JavaScript logic
 │
-├── images/ # All images used in the app
-│ └── ... # e.g., logo.png, icons, backgrounds
+├── images/                 # All images used in the app
+│   └── Screenshot.png      # App screenshot
 │
-├── questions/ # Question data
-│ └── questions.js # Array of quiz questions
-│
-└── tutorial/ # Optional: tutorials, guides, or assets
-└── ...
+└── questions/              # Question data
+    └── questions.js        # Array of quiz questions
+```
 
 ### File Descriptions
 
@@ -123,7 +122,6 @@ quiz-app/
 | `style.css`    | Contains all styling - colors, layout, hover effects, responsive design         |
 | `app.js`       | Contains the quiz logic - loading questions, handling clicks, calculating score |
 | `questions.js` | Contains 100 questions organized by category                                    |
-| `TUTORIAL.md`  | Step-by-step learning guide explaining every line of code                       |
 
 ---
 
@@ -184,8 +182,13 @@ If you're using VS Code:
 └────────┬────────┘               │
          ▼                        │
 ┌─────────────────┐               │
+│ Show Correct/   │               │
+│  Wrong Answer   │               │
+└────────┬────────┘               │
+         ▼                        │
+┌─────────────────┐               │
 │ User Clicks     │               │
-│ Next or Skip    │               │
+│     Next        │               │
 └────────┬────────┘               │
          ▼                        │
 ┌─────────────────┐    No         │
@@ -275,7 +278,6 @@ list.appendChild(li);
 ```javascript
 // When button is clicked, run this function
 nextBtn.addEventListener("click", function () {
-  checkAnswer();
   nextQuestion();
 });
 ```
@@ -390,7 +392,7 @@ Want to learn more? Check out these resources:
 
 ## 👤 Author
 
-**Anjum**
+**Adnan Anjum**
 
 - GitHub: [@anjumhere](https://github.com/anjumhere)
 - Project: [Interactive Quiz](https://github.com/anjumhere/interactive-quiz)
@@ -414,7 +416,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ```
 MIT License
 
-Copyright (c) 2024 Anjum
+Copyright (c) 2024 Adnan Anjum
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -425,6 +427,14 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
 ---
@@ -442,11 +452,10 @@ copies or substantial portions of the Software.
 </p>
 
 <p align="center">
-  Author : Adnan Anjum
+  <strong>Author: Adnan Anjum</strong>
 </p>
 
 <p align="center">
   <a href="https://anjumhere.github.io/interactive-quiz/">Live Demo</a> •
   <a href="https://github.com/anjumhere/interactive-quiz">GitHub Repo</a>
 </p>
-## Author : Adnan Anjum 
