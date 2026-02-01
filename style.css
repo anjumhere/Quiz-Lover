@@ -1,161 +1,225 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-    padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  padding: 20px;
 }
 
 .container {
-    width: 100%;
-    max-width: 550px;
-    padding: 25px;
-    background: #1e2746;
-    border-radius: 12px;
-    color: #fff;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 550px;
+  padding: 25px;
+  background: #1e2746;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .quiz-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background: #252d48;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #252d48;
 }
 
 .quiz-header h1 {
-    font-size: 1.5rem;
-    color: #a78bfa;
+  font-size: 1.5rem;
+  color: #a78bfa;
 }
 
 .quiz-header .progress {
-    padding: 8px 16px;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #7c3aed, #3b82f6);
-    font-weight: 600;
-    font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .quiz-body {
-    padding: 20px;
-    border-radius: 10px;
-    background: #252d48;
-    margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #252d48;
+  margin-bottom: 20px;
 }
 
 .question {
-    font-size: 1.1rem;
-    font-weight: 500;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #e2e8f0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #e2e8f0;
 }
 
 .options {
-    list-style: none;
+  list-style: none;
 }
 
 .option {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px 16px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    cursor: pointer;
-    color: #cbd5e1;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  color: #cbd5e1;
+  font-weight: 500;
 }
 
 .option:hover {
-    background: rgba(124, 58, 237, 0.15);
-    border-color: #7c3aed;
-    color: #fff;
+  background: rgba(124, 58, 237, 0.15);
+  border-color: #7c3aed;
+  color: #fff;
 }
 
 .option span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 6px;
-    background: rgba(124, 58, 237, 0.2);
-    color: #a78bfa;
-    font-weight: 600;
-    font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: rgba(124, 58, 237, 0.2);
+  color: #a78bfa;
+  font-weight: 600;
+  font-size: 0.85rem;
 }
 
 .option:hover span {
-    background: #7c3aed;
-    color: #fff;
+  background: #7c3aed;
+  color: #fff;
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .next-btn {
-    padding: 12px 30px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .next-btn:first-child {
-    background: transparent;
-    color: #94a3b8;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .next-btn:first-child:hover {
-    background: rgba(255, 255, 255, 0.05);
-    color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
 }
 
 .next-btn:last-child {
-    background: linear-gradient(135deg, #7c3aed, #3b82f6);
-    color: #fff;
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+  color: #fff;
 }
 
 .next-btn:last-child:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 15px;
-    }
+  .container {
+    padding: 15px;
+  }
 
-    .quiz-header {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
+  .quiz-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .next-btn {
-        width: 100%;
-    }
+  .next-btn {
+    width: 100%;
+  }
+}
+
+/* // adding selected options css  */
+.option.selected {
+  background: rgba(124, 58, 237, 0.3);
+  border-color: #7c3aed;
+  color: #fff;
+}
+
+.option.selected span {
+  background: #7c3aed;
+  color: #fff;
+}
+
+/* adding css to right and wrong answers */
+.option.correct {
+  background: rgba(34, 197, 94, 0.2);
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+.option.correct span {
+  background: #22c55e;
+  color: #fff;
+}
+
+.option.wrong {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.option.wrong span {
+  background: #ef4444;
+  color: #fff;
+}
+
+.show-result {
+}
+
+/* adding restart button */
+.restartButton {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.restartButton:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+.show-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+  text-align: center;
+  padding: 20px;
 }
